@@ -63,6 +63,7 @@ Things you need to install for the application
  - Mailers settings :
  Open the CINEFX_and_chill/src/controllers/SendHTMLEmail.java file and affect your "GMAIL" and password to the final variables.
  Do the same for the CINEFX_and_chill/src/controllers/Subscribemailer.java file.
+ PS: Don't forget to check this https://myaccount.google.com/lesssecureapps for your new gmail sender.
  
  ### Test
 
