@@ -64,6 +64,11 @@ Things you need to install for the application
  Open the CINEFX_and_chill/src/controllers/SendHTMLEmail.java file and affect your "GMAIL" and password to the final variables.
  Do the same for the CINEFX_and_chill/src/controllers/Subscribemailer.java file.
  
+ ### Test
+
+ - Use this credit card : 1111 2222 3333 4444        01/21       123   Or check CarteBancaires table for more test cards.
+ - Use this amin ID : admin1@gmail.com     1234       Or check Administrateurs table for more admin test accounts.
+ 
 ### More : Specifications analysis and UML modeling
 
 Specifications : View the CINEFX_and_chill/Cahier de charge.pdf file.
