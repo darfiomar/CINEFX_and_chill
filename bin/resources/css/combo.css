@@ -1,0 +1,9 @@
+
+.jfx-combo-box .list-view .list-cell {
+	-fx-background-color:  BLACK;
+	-fx-text-fill: WHITE;
+}
+.jfx-combo-box .list-cell {
+	-fx-background-color:  BLACK;
+	-fx-text-fill: WHITE;
+}

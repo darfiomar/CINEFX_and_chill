@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.web.WebView?>
+
+<AnchorPane fx:id="moviepane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.MovieController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="300.0" opacity="0.8" stroke="BLACK" strokeType="INSIDE" width="800.0" />
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #000;" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="15.0">
+         <children>
+            <WebView fx:id="movieimage" layoutX="-37.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="270.0" prefWidth="180.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="590.0" AnchorPane.topAnchor="0.0" />
+            <VBox prefHeight="270.0" prefWidth="590.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="180.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <HBox prefHeight="60.0" prefWidth="590.0">
+                     <children>
+                        <Label fx:id="movietitle" prefHeight="60.0" prefWidth="420.0" text="Titre du film" textFill="WHITE">
+                           <padding>
+                              <Insets left="20.0" right="20.0" />
+                           </padding>
+                           <font>
+                              <Font name="System Bold" size="34.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                           <image>
+                              <Image url="@../images/imdb.jpg" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="movieimdb" alignment="CENTER" contentDisplay="RIGHT" graphicTextGap="5.0" prefHeight="60.0" prefWidth="110.0" text="9.3" textFill="WHITE">
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                           <graphic>
+                              <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/star.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <font>
+                              <Font name="System Bold" size="32.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="150.0" prefWidth="590.0">
+                     <children>
+                        <Label fx:id="moviesynopsis" prefHeight="150.0" prefWidth="420.0" text="Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié. Il a été popularisé dans les années 1960 grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment, par son inclusion dans des applications de mise en page de texte, comme Aldus PageMaker." textFill="WHITE" textOverrun="WORD_ELLIPSIS" wrapText="true">
+                           <padding>
+                              <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                           </padding>
+                        </Label>
+                        <VBox prefHeight="150.0" prefWidth="170.0">
+                           <children>
+                              <Label fx:id="moviegenre" prefHeight="50.0" prefWidth="170.0" text="Genre du film" textFill="WHITE">
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                                 <padding>
+                                    <Insets bottom="10.0" left="15.0" right="10.0" top="10.0" />
+                                 </padding>
+                                 <font>
+                                    <Font name="System Bold" size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="moviepays" layoutX="10.0" layoutY="10.0" prefHeight="50.0" prefWidth="170.0" text="Pays du film" textFill="WHITE">
+                                 <padding>
+                                    <Insets bottom="10.0" left="15.0" right="10.0" top="10.0" />
+                                 </padding>
+                                 <font>
+                                    <Font name="System Bold" size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="movierelease" layoutX="10.0" layoutY="60.0" prefHeight="50.0" prefWidth="170.0" text="Annee du film" textFill="WHITE">
+                                 <padding>
+                                    <Insets bottom="10.0" left="15.0" right="10.0" top="10.0" />
+                                 </padding>
+                                 <font>
+                                    <Font name="System Bold" size="20.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="60.0" prefWidth="590.0">
+                     <children>
+                        <JFXButton fx:id="movieinfo" buttonType="RAISED" onAction="#handleplusdinformation" prefHeight="60.0" prefWidth="420.0" style="-fx-background-color: #efc62e; -fx-background-radius: 0 0 0 0;" text="Informations supplementaires..">
+                           <font>
+                              <Font name="System Bold" size="22.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton fx:id="movieticket" buttonType="RAISED" onAction="#handlereserverticket" prefHeight="60.0" prefWidth="170.0" style="-fx-background-radius: 0 0 0 0; -fx-background-color: #e50914;" text="RESERVER" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="22.0" />
+                           </font>
+                        </JFXButton>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="1.0" opacity="0.2" stroke="WHITE" strokeType="INSIDE" width="400.0" AnchorPane.leftAnchor="190.0" AnchorPane.topAnchor="60.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="1.0" layoutX="200.0" layoutY="70.0" opacity="0.2" stroke="WHITE" strokeType="INSIDE" width="150.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="109.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="1.0" layoutX="620.0" layoutY="119.0" opacity="0.2" stroke="WHITE" strokeType="INSIDE" width="150.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="159.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="130.0" layoutX="620.0" layoutY="169.0" opacity="0.2" stroke="WHITE" strokeType="INSIDE" width="1.0" AnchorPane.rightAnchor="170.0" AnchorPane.topAnchor="70.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#efc62e" height="1.0" layoutX="620.0" layoutY="119.0" opacity="0.2" stroke="#efc62e" strokeType="INSIDE" width="150.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="59.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

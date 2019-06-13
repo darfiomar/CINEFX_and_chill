@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="buyticketp" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.BuyticketController">
+   <children>
+      <AnchorPane prefHeight="500.0" prefWidth="500.0" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="100.0" AnchorPane.topAnchor="50.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" height="700.0" opacity="0.8" stroke="BLACK" strokeType="INSIDE" width="800.0" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="0.0" />
+            <HBox prefHeight="462.0" prefWidth="700.0" spacing="100.0" AnchorPane.bottomAnchor="208.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="30.0">
+               <children>
+                  <VBox prefHeight="500.0" prefWidth="300.0" spacing="25.0">
+                     <children>
+                        <Label text="Ticket" textFill="WHITE">
+                           <font>
+                              <Font name="Arial Bold" size="40.0" />
+                           </font>
+                        </Label>
+                        <Label text="1. Choisissez votre séance :" textFill="WHITE">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <VBox prefHeight="200.0" prefWidth="100.0" spacing="25.0">
+                           <children>
+                              <JFXComboBox fx:id="selectmovie" focusColor="#e50914" labelFloat="true" onAction="#choosemovie" prefHeight="50.0" prefWidth="300.0" promptText="Choisissez un film" style="-fx-background-color: #000; -fx-prompt-text-fill: #8c8c8c; -fx-font: 20px &quot;System&quot;;" stylesheets="@../css/combo.css">
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                              </JFXComboBox>
+                              <JFXComboBox fx:id="selectdate" focusColor="#e50914" labelFloat="true" onAction="#choosedate" prefHeight="50.0" prefWidth="300.0" promptText="Choisissez une date" style="-fx-background-color: #000; -fx-prompt-text-fill: #8c8c8c; -fx-font: 20px &quot;System&quot;;" stylesheets="@../css/combo.css">
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                              </JFXComboBox>
+                              <JFXComboBox fx:id="selecthoraire" focusColor="#e50914" labelFloat="true" onAction="#choosehoraire" prefHeight="50.0" prefWidth="300.0" promptText="Choisissez un horaire" style="-fx-background-color: #000; -fx-prompt-text-fill: #8c8c8c; -fx-font: 20px &quot;System&quot;;" stylesheets="@../css/combo.css">
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                              </JFXComboBox>
+                              <JFXComboBox fx:id="selectsalle" focusColor="#e50914" labelFloat="true" onAction="#choosesalle" prefHeight="50.0" prefWidth="300.0" promptText="Choisissez une salle" style="-fx-background-color: #000; -fx-prompt-text-fill: #8c8c8c; -fx-font: 20px &quot;System&quot;;" stylesheets="@../css/combo.css">
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                              </JFXComboBox>
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="200.0" prefWidth="100.0">
+                           <children>
+                              <HBox prefHeight="100.0" prefWidth="200.0">
+                                 <children>
+                                    <Label prefHeight="27.0" prefWidth="75.0" text="Prix :" textFill="WHITE" underline="true">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="prixseance" alignment="CENTER" prefHeight="30.0" prefWidth="150.0" textFill="#e50914">
+                                       <font>
+                                          <Font name="System Bold" size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="discount" alignment="CENTER_RIGHT" prefHeight="30.0" prefWidth="75.0" textFill="#e50914">
+                                       <font>
+                                          <Font name="System Bold" size="18.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="100.0" prefWidth="200.0">
+                                 <children>
+                                    <Label prefHeight="27.0" prefWidth="170.0" text="Tickets disponibles :" textFill="WHITE" underline="true">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="places" alignment="CENTER" prefHeight="30.0" prefWidth="130.0" textAlignment="CENTER" textFill="#e50914">
+                                       <font>
+                                          <Font name="System Bold" size="18.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="500.0" prefWidth="300.0" spacing="25.0">
+                     <children>
+                        <Label opacity="0.0" text="S'abonner">
+                           <font>
+                              <Font name="Arial Bold" size="40.0" />
+                           </font>
+                        </Label>
+                        <Label text="2. Vos coordonnées" textFill="WHITE">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <VBox prefHeight="200.0" prefWidth="100.0" spacing="5.0">
+                           <children>
+                              <JFXTextField fx:id="mailclient" focusColor="#e50914" labelFloat="true" prefHeight="46.0" prefWidth="300.0" promptText="Votre E-mail" style="-fx-text-inner-color: #fff; -fx-prompt-text-fill: #8c8c8c; -fx-background-color: #000;">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <padding>
+                                    <Insets bottom="6.7" left="5.0" right="5.0" top="6.7" />
+                                 </padding>
+                              </JFXTextField>
+                              <HBox prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+                                 <children>
+                                    <Label prefHeight="27.0" prefWidth="80.0" text="Statut :" textFill="WHITE" underline="true">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="statutclient" prefHeight="30.0" prefWidth="241.0" textFill="#e50914">
+                                       <font>
+                                          <Font name="System Bold" size="18.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                        <HBox prefHeight="66.0" prefWidth="324.0" spacing="20.0">
+                           <children>
+                              <JFXTextField fx:id="nomclient" focusColor="#e50914" labelFloat="true" prefHeight="50.0" prefWidth="300.0" promptText="Votre Nom" style="-fx-text-inner-color: #fff; -fx-prompt-text-fill: #8c8c8c; -fx-background-color: #000;">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets bottom="6.7" left="5.0" right="5.0" top="6.7" />
+                                 </padding>
+                              </JFXTextField>
+                              <JFXTextField fx:id="prenomclient" focusColor="#e50914" labelFloat="true" prefHeight="50.0" prefWidth="300.0" promptText="Votre Prenom" style="-fx-text-inner-color: #fff; -fx-prompt-text-fill: #8c8c8c; -fx-background-color: #000;">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets bottom="6.7" left="5.0" right="5.0" top="6.7" />
+                                 </padding>
+                              </JFXTextField>
+                           </children>
+                        </HBox>
+                        <Label text="3. Paiement sécurisé :" textFill="WHITE">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <JFXTextField fx:id="ccclient" focusColor="#e50914" labelFloat="true" prefHeight="50.0" prefWidth="300.0" promptText="Numero de votre carte" style="-fx-text-inner-color: #fff; -fx-prompt-text-fill: #8c8c8c; -fx-background-color: #000;">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                           <padding>
+                              <Insets bottom="6.7" left="5.0" right="5.0" top="6.7" />
+                           </padding>
+                        </JFXTextField>
+                        <HBox layoutX="10.0" layoutY="147.0" prefHeight="66.0" prefWidth="324.0" spacing="30.0">
+                           <children>
+                              <JFXTextField fx:id="declient" focusColor="#e50914" labelFloat="true" prefHeight="50.0" prefWidth="270.0" promptText="Date d'expiration" style="-fx-text-inner-color: #fff; -fx-prompt-text-fill: #8c8c8c; -fx-background-color: #000;">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets bottom="6.7" left="5.0" right="5.0" top="6.7" />
+                                 </padding>
+                              </JFXTextField>
+                              <JFXTextField fx:id="cryptoclient" focusColor="#e50914" labelFloat="true" layoutX="10.0" layoutY="10.0" prefHeight="50.0" prefWidth="191.0" promptText="Crypto" style="-fx-text-inner-color: #fff; -fx-prompt-text-fill: #8c8c8c; -fx-background-color: #000;">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets bottom="6.7" left="5.0" right="5.0" top="6.7" />
+                                 </padding>
+                              </JFXTextField>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="410.0" opacity="0.2" stroke="WHITE" strokeType="INSIDE" width="1.0" AnchorPane.bottomAnchor="131.0" AnchorPane.leftAnchor="399.5" AnchorPane.rightAnchor="399.5" AnchorPane.topAnchor="100.0" />
+            <VBox layoutX="350.0" layoutY="415.0" prefHeight="160.0" prefWidth="700.0" spacing="20.0" AnchorPane.bottomAnchor="25.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="515.0">
+               <children>
+                  <Label text="En cliquant sur «Acheter» ci-dessous, vous allez recevoir un courrier electronique contenant votre ticket CINEFX en version HTML." textFill="WHITE" textOverrun="WORD_ELLIPSIS" wrapText="true">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Label>
+                  <JFXButton fx:id="buyticket" buttonType="RAISED" onAction="#acheterticket" prefHeight="80.0" prefWidth="700.0" style="-fx-background-color: #e50914;" text="Acheter" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Black" size="24.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+               <padding>
+                  <Insets top="8.0" />
+               </padding>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

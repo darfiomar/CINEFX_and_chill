@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="subscribep" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.SubscribeController">
+   <children>
+      <AnchorPane prefHeight="500.0" prefWidth="500.0" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="100.0" AnchorPane.topAnchor="50.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" height="700.0" opacity="0.8" stroke="BLACK" strokeType="INSIDE" width="800.0" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="0.0" />
+            <HBox prefHeight="462.0" prefWidth="700.0" spacing="100.0" AnchorPane.bottomAnchor="208.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="30.0">
+               <children>
+                  <VBox prefHeight="500.0" prefWidth="300.0" spacing="25.0">
+                     <children>
+                        <Label text="S'abonner" textFill="WHITE">
+                           <font>
+                              <Font name="Arial Bold" size="40.0" />
+                           </font>
+                        </Label>
+                        <Label text="1. Inscrivez-vous :" textFill="WHITE">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <VBox prefHeight="200.0" prefWidth="100.0" spacing="5.0">
+                           <children>
+                              <JFXTextField fx:id="mailabonne" focusColor="#e50914" labelFloat="true" prefHeight="46.0" prefWidth="300.0" promptText="Votre E-mail d'abonnement" style="-fx-text-inner-color: #fff; -fx-prompt-text-fill: #8c8c8c; -fx-background-color: #000;">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <padding>
+                                    <Insets bottom="6.7" left="5.0" right="5.0" top="6.7" />
+                                 </padding>
+                              </JFXTextField>
+                              <HBox prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+                                 <children>
+                                    <Label prefHeight="30.0" prefWidth="80.0" text="Statut :" textFill="WHITE" underline="true">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="statutabonne" prefHeight="30.0" prefWidth="241.0" textFill="#e50914">
+                                       <font>
+                                          <Font name="System Bold" size="18.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                        <Label fx:id="actionabonne" layoutX="10.0" layoutY="82.0" text="-------------------------------------" textFill="WHITE">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <HBox prefHeight="66.0" prefWidth="324.0" spacing="20.0">
+                           <children>
+                              <JFXTextField fx:id="nomabonne" focusColor="#e50914" labelFloat="true" prefHeight="50.0" prefWidth="300.0" promptText="Votre Nom" style="-fx-text-inner-color: #fff; -fx-prompt-text-fill: #8c8c8c; -fx-background-color: #000;">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets bottom="6.7" left="5.0" right="5.0" top="6.7" />
+                                 </padding>
+                              </JFXTextField>
+                              <JFXTextField fx:id="prenomabonne" focusColor="#e50914" labelFloat="true" prefHeight="50.0" prefWidth="300.0" promptText="Votre Prenom" style="-fx-text-inner-color: #fff; -fx-prompt-text-fill: #8c8c8c; -fx-background-color: #000;">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets bottom="6.7" left="5.0" right="5.0" top="6.7" />
+                                 </padding>
+                              </JFXTextField>
+                           </children>
+                        </HBox>
+                        <JFXTextField fx:id="adrabonne" focusColor="#e50914" labelFloat="true" layoutX="10.0" layoutY="127.0" prefHeight="50.0" prefWidth="300.0" promptText="Votre adresse" style="-fx-text-inner-color: #fff; -fx-prompt-text-fill: #8c8c8c; -fx-background-color: #000;">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                           <padding>
+                              <Insets bottom="6.7" left="5.0" right="5.0" top="6.7" />
+                           </padding>
+                        </JFXTextField>
+                        <JFXTextField fx:id="phoneabonne" focusColor="#e50914" labelFloat="true" layoutX="10.0" layoutY="283.0" prefHeight="50.0" prefWidth="300.0" promptText="Votre numero de telephone" style="-fx-text-inner-color: #fff; -fx-prompt-text-fill: #8c8c8c; -fx-background-color: #000;">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                           <padding>
+                              <Insets bottom="6.7" left="5.0" right="5.0" top="6.7" />
+                           </padding>
+                        </JFXTextField>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="500.0" prefWidth="300.0" spacing="25.0">
+                     <children>
+                        <Label opacity="0.0" text="S'abonner">
+                           <font>
+                              <Font name="Arial Bold" size="40.0" />
+                           </font>
+                        </Label>
+                        <Label text="2. Choisissez votre forfait :" textFill="WHITE">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <VBox prefHeight="179.0" prefWidth="300.0" spacing="15.0">
+                           <children>
+                              <JFXRadioButton fx:id="onemonth" prefHeight="40.0" prefWidth="300.0" style="-jfx-selected-color: #e50914; -jfx-unselected-color: #fff;" text="1 Mois - 299DH" textFill="WHITE">
+                                 <font>
+                                    <Font size="28.0" />
+                                 </font>
+                                 <toggleGroup>
+                                    <ToggleGroup fx:id="forfait" />
+                                 </toggleGroup>
+                              </JFXRadioButton>
+                              <JFXRadioButton fx:id="threemonth" prefHeight="40.0" prefWidth="300.0" selected="true" style="-jfx-selected-color: #e50914; -jfx-unselected-color: #fff;" text="3 Mois - 799DH" textFill="WHITE" toggleGroup="$forfait">
+                                 <font>
+                                    <Font size="28.0" />
+                                 </font>
+                              </JFXRadioButton>
+                              <JFXRadioButton fx:id="sixmonth" prefHeight="40.0" prefWidth="300.0" style="-jfx-selected-color: #e50914; -jfx-unselected-color: #fff;" text="6 Mois - 1499DH" textFill="WHITE" toggleGroup="$forfait">
+                                 <font>
+                                    <Font size="28.0" />
+                                 </font>
+                              </JFXRadioButton>
+                           </children>
+                           <padding>
+                              <Insets left="20.0" right="20.0" />
+                           </padding>
+                        </VBox>
+                        <Label text="3. Paiement sécurisé :" textFill="WHITE">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <JFXTextField fx:id="ccabonne" focusColor="#e50914" labelFloat="true" prefHeight="50.0" prefWidth="300.0" promptText="Numero de votre carte" style="-fx-text-inner-color: #fff; -fx-prompt-text-fill: #8c8c8c; -fx-background-color: #000;">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                           <padding>
+                              <Insets bottom="6.7" left="5.0" right="5.0" top="6.7" />
+                           </padding>
+                        </JFXTextField>
+                        <HBox layoutX="10.0" layoutY="147.0" prefHeight="66.0" prefWidth="324.0" spacing="30.0">
+                           <children>
+                              <JFXTextField fx:id="deabonne" focusColor="#e50914" labelFloat="true" prefHeight="50.0" prefWidth="270.0" promptText="Date d'expiration" style="-fx-text-inner-color: #fff; -fx-prompt-text-fill: #8c8c8c; -fx-background-color: #000;">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets bottom="6.7" left="5.0" right="5.0" top="6.7" />
+                                 </padding>
+                              </JFXTextField>
+                              <JFXTextField fx:id="cryptoabonne" focusColor="#e50914" labelFloat="true" layoutX="10.0" layoutY="10.0" prefHeight="50.0" prefWidth="191.0" promptText="Crypto" style="-fx-text-inner-color: #fff; -fx-prompt-text-fill: #8c8c8c; -fx-background-color: #000;">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets bottom="6.7" left="5.0" right="5.0" top="6.7" />
+                                 </padding>
+                              </JFXTextField>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="410.0" opacity="0.2" stroke="WHITE" strokeType="INSIDE" width="1.0" AnchorPane.bottomAnchor="131.0" AnchorPane.leftAnchor="399.5" AnchorPane.rightAnchor="399.5" AnchorPane.topAnchor="100.0" />
+            <VBox layoutX="350.0" layoutY="415.0" prefHeight="160.0" prefWidth="700.0" spacing="20.0" AnchorPane.bottomAnchor="25.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="515.0">
+               <children>
+                  <Label text="En cliquant sur «S'abonner» ci-dessous, vous acceptez de recevoir toutes nos nouveautés grâce à la newsletter CINEFX." textFill="WHITE" textOverrun="WORD_ELLIPSIS" wrapText="true">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Label>
+                  <JFXButton fx:id="sabonner" buttonType="RAISED" onAction="#subscribe" prefHeight="80.0" prefWidth="700.0" style="-fx-background-color: #e50914;" text="S'abonner" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Black" size="24.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+               <padding>
+                  <Insets top="8.0" />
+               </padding>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

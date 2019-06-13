@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="dashboardp" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.DashboardController">
+   <padding>
+      <Insets bottom="50.0" left="100.0" right="100.0" top="50.0" />
+   </padding>
+   <children>
+      <VBox spacing="20.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <AnchorPane prefHeight="70.0" prefWidth="900.0">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" height="70.0" opacity="0.8" stroke="BLACK" strokeType="INSIDE" width="800.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                  <JFXButton fx:id="adminprofile" buttonType="RAISED" graphicTextGap="10.0" layoutY="20.0" onAction="#editadminprofile" prefHeight="70.0" style="-fx-background-radius: 0 0 0 0;" text="" textFill="WHITE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <font>
+                        <Font name="Arial Bold" size="28.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                     <graphic>
+                        <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/administrator-512.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="logoutbutton" buttonType="RAISED" graphicTextGap="10.0" onAction="#logout" style="-fx-background-radius: 0 0 0 0;" text="Se déconnecter." textFill="WHITE" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                     <graphic>
+                        <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/logout.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+               </children>
+            </AnchorPane>
+            <HBox prefHeight="170.0" prefWidth="900.0" spacing="25.0">
+               <padding>
+                  <Insets left="5.0" right="5.0" />
+               </padding>
+               <children>
+                  <AnchorPane prefHeight="170.0" prefWidth="210.0">
+                     <children>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" height="170.0" opacity="0.8" stroke="BLACK" strokeType="INSIDE" width="210.0" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#efc62e" height="150.0" stroke="#efc62e" strokeType="INSIDE" width="190.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0" />
+                        <Label fx:id="soldtickets" alignment="CENTER" text="888888" textFill="WHITE" AnchorPane.bottomAnchor="70.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="35.0">
+                           <font>
+                              <Font name="Verdana Bold" size="38.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" text="TICKETS VENDUS." textAlignment="CENTER" textFill="WHITE" wrapText="true" AnchorPane.bottomAnchor="35.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0">
+                           <font>
+                              <Font name="Arial Bold" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="15.0" layoutY="10.0" prefHeight="170.0" prefWidth="210.0">
+                     <children>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" height="170.0" opacity="0.8" stroke="BLACK" strokeType="INSIDE" width="210.0" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#efc62e" height="150.0" stroke="#efc62e" strokeType="INSIDE" width="190.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0" />
+                        <Label fx:id="subscriptions" alignment="CENTER" text="888888" textFill="WHITE" AnchorPane.bottomAnchor="70.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="35.0">
+                           <font>
+                              <Font name="Verdana Bold" size="38.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" text="ABONNEMENTS." textAlignment="CENTER" textFill="WHITE" wrapText="true" AnchorPane.bottomAnchor="35.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0">
+                           <font>
+                              <Font name="Arial Bold" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="250.0" layoutY="10.0" prefHeight="170.0" prefWidth="320.0">
+                     <children>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" height="170.0" opacity="0.8" stroke="BLACK" strokeType="INSIDE" width="320.0" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#efc62e" height="150.0" stroke="#efc62e" strokeType="INSIDE" width="300.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0" />
+                        <Label fx:id="chiffredaffaires" alignment="CENTER" text="888888.8 DH" textFill="WHITE" AnchorPane.bottomAnchor="70.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="35.0">
+                           <font>
+                              <Font name="Verdana Bold" size="38.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" text="EN CHIFFRE D'AFFAIRES." textAlignment="CENTER" textFill="WHITE" wrapText="true" AnchorPane.bottomAnchor="35.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0">
+                           <font>
+                              <Font name="Arial Bold" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </HBox>
+            <AnchorPane prefHeight="70.0" prefWidth="200.0">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" height="70.0" opacity="0.8" stroke="BLACK" strokeType="INSIDE" width="800.0" />
+                  <Label graphicTextGap="10.0" text="Tableau de bord :" textFill="WHITE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                     <graphic>
+                        <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/dashboard-512.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="Arial Bold" size="28.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="todaysdate" text="Le 02/07/2020" textFill="WHITE" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <HBox prefHeight="330.0" prefWidth="900.0" spacing="30.0">
+               <opaqueInsets>
+                  <Insets right="5.0" />
+               </opaqueInsets>
+               <padding>
+                  <Insets left="5.0" right="5.0" />
+               </padding>
+               <children>
+                  <AnchorPane prefHeight="330.0" prefWidth="380.0">
+                     <children>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" height="330.0" opacity="0.75" stroke="BLACK" strokeType="INSIDE" width="380.0" />
+                        <VBox AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0">
+                           <children>
+                              <AnchorPane prefHeight="70.0" prefWidth="370.0">
+                                 <children>
+                                    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#e50914" height="70.0" stroke="#e50914" strokeType="INSIDE" width="370.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                    <Label layoutX="158.0" layoutY="25.0" text="Gérer vos films et séances: " textFill="WHITE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                       <padding>
+                                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                       </padding>
+                                       <font>
+                                          <Font size="24.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane prefHeight="250.0" prefWidth="370.0">
+                                 <children>
+                                    <Rectangle arcHeight="5.0" arcWidth="5.0" height="250.0" stroke="BLACK" strokeType="INSIDE" width="370.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                    <VBox AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                       <children>
+                                          <JFXButton fx:id="ajouterfilm" alignment="BASELINE_LEFT" buttonType="RAISED" graphicTextGap="0.0" onAction="#addmovie" prefHeight="62.5" prefWidth="370.0" style="-fx-background-radius: 0 0 0 0;" text="1. Ajouter un film." textFill="WHITE">
+                                             <font>
+                                                <Font size="22.0" />
+                                             </font>
+                                             <padding>
+                                                <Insets bottom="10.0" left="40.0" right="10.0" top="10.0" />
+                                             </padding>
+                                          </JFXButton>
+                                          <JFXButton fx:id="editerfilm" alignment="BASELINE_LEFT" buttonType="RAISED" graphicTextGap="0.0" layoutX="10.0" layoutY="10.0" onAction="#editmovie" prefHeight="62.5" prefWidth="370.0" style="-fx-background-radius: 0 0 0 0;" text="2. Editer un film." textFill="WHITE">
+                                             <font>
+                                                <Font size="22.0" />
+                                             </font>
+                                             <padding>
+                                                <Insets bottom="10.0" left="40.0" right="10.0" top="10.0" />
+                                             </padding>
+                                          </JFXButton>
+                                          <JFXButton fx:id="ajouterseance" alignment="BASELINE_LEFT" buttonType="RAISED" graphicTextGap="0.0" layoutX="10.0" layoutY="73.0" onAction="#addseance" prefHeight="62.5" prefWidth="370.0" style="-fx-background-radius: 0 0 0 0;" text="3. Ajouter une séance." textFill="WHITE">
+                                             <font>
+                                                <Font size="22.0" />
+                                             </font>
+                                             <padding>
+                                                <Insets bottom="10.0" left="40.0" right="10.0" top="10.0" />
+                                             </padding>
+                                          </JFXButton>
+                                          <JFXButton fx:id="editerseance" alignment="BASELINE_LEFT" buttonType="RAISED" graphicTextGap="0.0" layoutX="10.0" layoutY="136.0" onAction="#editseance" prefHeight="62.5" prefWidth="370.0" style="-fx-background-radius: 0 0 0 0;" text="4. Editer une séance." textFill="WHITE">
+                                             <font>
+                                                <Font size="22.0" />
+                                             </font>
+                                             <padding>
+                                                <Insets bottom="10.0" left="40.0" right="10.0" top="10.0" />
+                                             </padding>
+                                          </JFXButton>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </VBox>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="15.0" layoutY="10.0" prefHeight="330.0" prefWidth="380.0">
+                     <children>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" height="330.0" opacity="0.75" stroke="BLACK" strokeType="INSIDE" width="380.0" />
+                        <VBox AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0">
+                           <children>
+                              <AnchorPane prefHeight="70.0" prefWidth="370.0">
+                                 <children>
+                                    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#e50914" height="70.0" stroke="#e50914" strokeType="INSIDE" width="370.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                    <Label layoutX="158.0" layoutY="25.0" text="Géstion des abonnements:" textFill="WHITE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                       <padding>
+                                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                       </padding>
+                                       <font>
+                                          <Font size="24.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane prefHeight="250.0" prefWidth="370.0">
+                                 <children>
+                                    <Rectangle arcHeight="5.0" arcWidth="5.0" height="250.0" stroke="BLACK" strokeType="INSIDE" width="370.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                    <VBox AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                       <children>
+                                          <JFXButton fx:id="ajouterabonne" alignment="BASELINE_LEFT" buttonType="RAISED" graphicTextGap="0.0" onAction="#addabonne" prefHeight="62.5" prefWidth="370.0" style="-fx-background-radius: 0 0 0 0;" text="1. Ajouter un abonné." textFill="WHITE">
+                                             <font>
+                                                <Font size="22.0" />
+                                             </font>
+                                             <padding>
+                                                <Insets bottom="10.0" left="40.0" right="10.0" top="10.0" />
+                                             </padding>
+                                          </JFXButton>
+                                          <JFXButton fx:id="editerabonne" alignment="BASELINE_LEFT" buttonType="RAISED" graphicTextGap="0.0" layoutX="10.0" layoutY="10.0" onAction="#editabonne" prefHeight="62.5" prefWidth="370.0" style="-fx-background-radius: 0 0 0 0;" text="2. Editer un abonnement." textFill="WHITE">
+                                             <font>
+                                                <Font size="22.0" />
+                                             </font>
+                                             <padding>
+                                                <Insets bottom="10.0" left="40.0" right="10.0" top="10.0" />
+                                             </padding>
+                                          </JFXButton>
+                                          <JFXButton fx:id="listeabonnes" alignment="BASELINE_LEFT" buttonType="RAISED" graphicTextGap="0.0" layoutX="10.0" layoutY="73.0" onAction="#showlistabonne" prefHeight="62.5" prefWidth="370.0" style="-fx-background-radius: 0 0 0 0;" text="3. Liste des abonnés." textFill="WHITE">
+                                             <font>
+                                                <Font size="22.0" />
+                                             </font>
+                                             <padding>
+                                                <Insets bottom="10.0" left="40.0" right="10.0" top="10.0" />
+                                             </padding>
+                                          </JFXButton>
+                                          <JFXButton fx:id="listenonabonne" alignment="BASELINE_LEFT" buttonType="RAISED" graphicTextGap="0.0" layoutX="10.0" layoutY="136.0" onAction="#showlistnonabonne" prefHeight="62.5" prefWidth="370.0" style="-fx-background-radius: 0 0 0 0;" text="4. Liste des non-abonnés." textFill="WHITE">
+                                             <font>
+                                                <Font size="22.0" />
+                                             </font>
+                                             <padding>
+                                                <Insets bottom="10.0" left="40.0" right="10.0" top="10.0" />
+                                             </padding>
+                                          </JFXButton>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </VBox>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </HBox>
+         </children></VBox>
+   </children>
+</AnchorPane>
