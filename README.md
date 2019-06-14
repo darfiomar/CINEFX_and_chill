@@ -1,6 +1,7 @@
 # CINEFX AND CHILL 
 
 ![alt text](https://github.com/darfiomar/CINEFX_and_chill/blob/master/logo.png)
+
 Cinema ticket desktop application. Written in jave SE / JavaFX
 
 
